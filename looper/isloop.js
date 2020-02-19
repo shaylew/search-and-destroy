@@ -3,6 +3,9 @@
 //Complete this algo
 const isLoop = (linkedlist) => {
     let currentNode = linkedlist.head
+    if(currentNode === null){
+        return false
+    }
     
     while(currentNode.next !== null){
         const nextNode = currentNode.next;
